@@ -56,4 +56,7 @@ typings/
 
 # dotenv environment variables file
 .env
+!.local.env
 
+# hubot specific
+/.hubot_history

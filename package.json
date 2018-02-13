@@ -1,0 +1,31 @@
+{
+  "name": "hubot-rocketchat-boilerplate",
+  "version": "0.0.0-develop",
+  "description": "An example Hubot demonstrating usage of the Rocket.Chat adaptor.",
+  "main": "bin/hubot",
+  "repository": "git@github.com:RocketChat/hubot-rocketchat-boilerplate.git",
+  "author": "Tim Kinnane <tim.kinnane@rocket.chat>",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "hubot",
+    "rocketchat",
+    "chatbot",
+    "chat"
+  ],
+  "engines": {
+    "node": "> 8.0.0",
+    "npm": "> 5.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^5.0.0",
+    "hubot": "^3.0.0",
+    "hubot-rocketchat": "https://github.com/timkinnane/hubot-rocketchat.git#convert-es6",
+    "standardjs": "^1.0.0-alpha"
+  },
+  "scripts": {
+    "shell": "node -r dotenv/config node_modules/hubot/bin/hubot.js dotenv_config_path=\".local.env\" -a shell",
+    "local": "node -r dotenv/config node_modules/hubot/bin/hubot.js dotenv_config_path=\".local.env\" -a rocketchat",
+    "debug": "node --inspect --inspect-brk -r dotenv/config node_modules/hubot/bin/hubot.js dotenv_config_path=\".local.env\" -a rocketchat"
+  }
+}
