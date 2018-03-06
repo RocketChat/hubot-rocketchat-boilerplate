@@ -3,8 +3,8 @@
 //    https://github.com/hubotio/hubot/blob/master/docs/scripting.md#documenting-scripts
 // 
 // Commands:
-//    newbot what time is it? - Tells you the time
-//    newbot what's the time? - Tells you the time
+//    bot what time is it? - Tells you the time
+//    bot what's the time? - Tells you the time
 //
 module.exports = (robot) => {
   robot.respond(/(what time is it|what's the time)/gi, (res) => {

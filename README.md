@@ -3,12 +3,13 @@ An example Hubot demonstrating usage of the Rocket.Chat adaptor.
 
 ### NB: THIS IS A WORK IN PROGRESS
 
-> Please do not attempt to impliment until this message is removed
+> Please do not attempt to implement until this message is removed
 
 > The `-develop` tag will also be removed from the package file.
 
 [hubot]: https://github.com/hubotio/hubot
 [hubot-rocketchat]: https://github.com/rocketchat/hubot-rocketchat
+[driver]: https://github.com/rocketchat/rocketchat-bot-driver
 [contributing]: https://rocket.chat/docs/contributing/developing/
 [issues]: https://github.com/RocketChat/hubot-rocketchat-boilerplate/issues
 [generator]: https://github.com/hubotio/generator-hubot
@@ -19,11 +20,12 @@ An example Hubot demonstrating usage of the Rocket.Chat adaptor.
 ## Stable Versions
 
 This demo uses [`hubot`][hubot] v3 and [`hubot-rocketchat`][hubot-rocketchat]
-v2, for Rocket.Chat instances 0.60.0 onward.
+v2, using the new [Rocketchat Bot Driver][[driver] for Rocket.Chat instances
+0.60.0 onward.
 
 Versions of `hubot-rocketchat` prior to v2 are incompatible with Hubot v3
 
-Due to the v1 adaptor's use of coffee script, extending classes in es6
+Due to the v1 adapter's use of coffee script, extending classes in es6
 javascript is troublesome.
 
 This bot is written in es6 and intended to run on node v8+. To run a bot on
@@ -59,7 +61,7 @@ to date, but we do not control the versions of the Rocket.Chat adaptor it uses.
 
 5. Commit your changes
 
-    `git add -A && git commit -m "New bot setup"`
+    `git add -A && git commit -m "New bot set up"`
 
 4. Push the main branch to the new repo
 
@@ -76,7 +78,7 @@ You can run with the shell adapter just to test
 When you're ready to connect the bot to an instance of Rocket.Chat
 
 1. Create a user for the bot, with the role _bot_
-2. Edit the `./.local.env` file with the user and connection settings
+2. Edit the `./.env` file with the user and connection settings
 3. Run `yarn local` script to connect to your local Rocket.Chat
 
 ### Running in Production
@@ -102,16 +104,16 @@ of each in this repo, but neither is required.
 ## Configuration
 
 When running locally, we've used [`dotenv`][dotenv] to load configs from the
-`./.local.env` file. That makes it easy for setting environment variables.
+`./.env` file. That makes it easy for setting environment variables.
 
-### NB: GIT IGNORE THE LOCAL ENV 🚨
+### NB: GIT IGNORE THE ENV 🚨
 
 It was included only as a sample for how to set up the bot.
 
 If you commit actual passwords to your repo, they can be retrieved even if
-the file is later deletd.
+the file is later deleted.
 
-Before committing, delete the last line of `./.gitignore` and untrack the file.
+Before committing, delete the last line of `./.gitignore` and un-track the file.
 
 ### Environment Variables
 

@@ -2,6 +2,29 @@
 # yarn lockfile v1
 
 
+"@types/events@*":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@types/events/-/events-1.2.0.tgz#81a6731ce4df43619e5c8c945383b3e62a89ea86"
+
+"@types/lodash@^4.14.102":
+  version "4.14.104"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.104.tgz#53ee2357fa2e6e68379341d92eb2ecea4b11bb80"
+
+"@types/lru-cache@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@types/lru-cache/-/lru-cache-4.1.0.tgz#ef69ce9c3ebb46bd146f0d80f0c1ce38b0508eae"
+
+"@types/node@*", "@types/node@^9.4.6":
+  version "9.4.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.4.6.tgz#d8176d864ee48753d053783e4e463aec86b8d82e"
+
+"@types/ws@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@types/ws/-/ws-4.0.1.tgz#3309d4d02a1ea9cf617d638b9239a2e1e28ef21e"
+  dependencies:
+    "@types/events" "*"
+    "@types/node" "*"
+
 accepts@~1.2.12, accepts@~1.2.13:
   version "1.2.13"
   resolved "https://registry.yarnpkg.com/accepts/-/accepts-1.2.13.tgz#e5f1f3928c6d95fd96558c36ec3d9d0de4a6ecea"
@@ -24,9 +47,9 @@ ansi-styles@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-2.2.1.tgz#b432dd3358b634cf75e1e4664368240533c1ddbe"
 
-"asteroid@https://github.com/RocketChat/asteroid.git":
+asteroid@rocketchat/asteroid:
   version "0.6.1"
-  resolved "https://github.com/RocketChat/asteroid.git#a76a53254e381f9487aa2a9be3d874c9a2df6552"
+  resolved "https://codeload.github.com/rocketchat/asteroid/tar.gz/a76a53254e381f9487aa2a9be3d874c9a2df6552"
   dependencies:
     ddp.js "^0.5.0"
     faye-websocket "^0.11.0"
@@ -92,6 +115,10 @@ cline@^0.8.2:
 coffee-script@1.6.3:
   version "1.6.3"
   resolved "https://registry.yarnpkg.com/coffee-script/-/coffee-script-1.6.3.tgz#6355d32cf1b04cdff6b484e5e711782b2f0c39be"
+
+coffeescript@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/coffeescript/-/coffeescript-2.2.2.tgz#e693fefdb3d69017e13d24b8d6a658f8f4a7c1a9"
 
 commander@2.6.0:
   version "2.6.0"
@@ -252,6 +279,10 @@ dotenv@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-5.0.0.tgz#0206eb5b336639bf377618a2a304ff00c6a1fddb"
 
+dotenv@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-5.0.1.tgz#a5317459bd3d79ab88cff6e44057a6a3fbb1fcef"
+
 ee-first@1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.0.tgz#6a0d7c6221e490feefd92ec3f441c9ce8cd097f4"
@@ -363,18 +394,16 @@ http-parser-js@>=0.4.0:
   version "0.4.10"
   resolved "https://registry.yarnpkg.com/http-parser-js/-/http-parser-js-0.4.10.tgz#92c9c1374c35085f75db359ec56cc257cbb93fa4"
 
-"hubot-rocketchat@https://github.com/timkinnane/hubot-rocketchat.git#convert-es6":
-  version "1.0.12"
-  resolved "https://github.com/timkinnane/hubot-rocketchat.git#048e2b12bac4f17e06874c897d7f14ef4ad94d34"
+hubot-rocketchat@timkinnane/hubot-rocketchat#convert-es6:
+  version "2.0.0-development"
+  resolved "https://codeload.github.com/timkinnane/hubot-rocketchat/tar.gz/73571c11a279f44aeafd542d46f52ba12c851c43"
   dependencies:
-    asteroid "https://github.com/RocketChat/asteroid.git"
-    lru-cache "~4.0.2"
-    parent-require "^1.0.0"
-    q "^1.5.0"
+    hubot "https://github.com/hubotio/hubot.git#v3.0.1"
+    rocketchat-bot-driver "^0.0.3"
 
-hubot@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/hubot/-/hubot-3.0.1.tgz#fe1bca4ece9c4f88f172047d63945b78d3623759"
+"hubot@https://github.com/hubotio/hubot.git#v3.0.1":
+  version "0.0.0-development"
+  resolved "https://github.com/hubotio/hubot.git#e89b0402d756ea0ee6f7960a2fd6bab364330f85"
   dependencies:
     async ">=0.1.0 <1.0.0"
     chalk "^1.0.0"
@@ -410,12 +439,12 @@ log@1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/log/-/log-1.4.0.tgz#4ba1d890fde249b031dca03bc37eaaf325656f1c"
 
-lru-cache@~4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-4.0.2.tgz#1d17679c069cda5d040991a09dbc2c0db377e55e"
+lru-cache@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-4.1.1.tgz#622e32e82488b49279114a4f9ecf45e7cd6bba55"
   dependencies:
-    pseudomap "^1.0.1"
-    yallist "^2.0.0"
+    pseudomap "^1.0.2"
+    yallist "^2.1.2"
 
 media-typer@0.3.0:
   version "0.3.0"
@@ -533,10 +562,6 @@ optparse@1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/optparse/-/optparse-1.0.4.tgz#c062579d2d05d243c221a304a71e0c979623ccf1"
 
-parent-require@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/parent-require/-/parent-require-1.0.0.tgz#746a167638083a860b0eef6732cb27ed46c32977"
-
 parseurl@~1.3.0, parseurl@~1.3.1, parseurl@~1.3.2:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/parseurl/-/parseurl-1.3.2.tgz#fc289d4ed8993119460c156253262cdc8de65bf3"
@@ -552,11 +577,11 @@ proxy-addr@~1.0.8:
     forwarded "~0.1.0"
     ipaddr.js "1.0.5"
 
-pseudomap@^1.0.1:
+pseudomap@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/pseudomap/-/pseudomap-1.0.2.tgz#f052a28da70e618917ef0a8ac34c1ae5a68286b3"
 
-q@^1.0.1, q@^1.5.0:
+q@^1.0.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
 
@@ -603,6 +628,18 @@ response-time@~2.3.1:
 rndm@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/rndm/-/rndm-1.2.0.tgz#f33fe9cfb52bbfd520aa18323bc65db110a1b76c"
+
+rocketchat-bot-driver@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/rocketchat-bot-driver/-/rocketchat-bot-driver-0.0.3.tgz#870720e51e69d4c152bd59ed9f5f93588cc3637a"
+  dependencies:
+    "@types/lodash" "^4.14.102"
+    "@types/lru-cache" "^4.1.0"
+    "@types/node" "^9.4.6"
+    "@types/ws" "^4.0.1"
+    asteroid rocketchat/asteroid
+    dotenv "^5.0.1"
+    lru-cache "^4.1.1"
 
 scoped-http-client@0.11.0:
   version "0.11.0"
@@ -670,10 +707,6 @@ serve-static@~1.10.0:
     escape-html "~1.0.3"
     parseurl "~1.3.1"
     send "0.13.2"
-
-standardjs@^1.0.0-alpha:
-  version "1.0.0-alpha"
-  resolved "https://registry.yarnpkg.com/standardjs/-/standardjs-1.0.0-alpha.tgz#179174133be70ee6bd25f5a6e4ccc6ebfb942306"
 
 statuses@1:
   version "1.4.0"
@@ -764,6 +797,6 @@ websocket-extensions@>=0.1.1:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.3.tgz#5d2ff22977003ec687a4b87073dfbbac146ccf29"
 
-yallist@^2.0.0:
+yallist@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-2.1.2.tgz#1c11f9218f076089a47dd512f93c6699a6a81d52"
