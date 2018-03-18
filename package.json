@@ -24,8 +24,9 @@
     "hubot-rocketchat": "timkinnane/hubot-rocketchat#convert-es6"
   },
   "scripts": {
+    "decaff": "node -r dotenv/config node_modules/hubot/bin/hubot.js -a rocketchat",
     "shell": "coffee --nodejs '-r dotenv/config' node_modules/.bin/hubot -a shell",
-    "local": "coffee --nodejs '-r dotenv/config' node_modules/.bin/hubot -a rocketchat",
+    "local": "coffee --nodejs '-r dotenv/config' node_modules/.bin/hubot -a rocketchat -r scripts",
     "debug": "coffee --nodejs '--inspect --inspect-brk -r dotenv/config' node_modules/.bin/hubot -a rocketchat"
   }
 }

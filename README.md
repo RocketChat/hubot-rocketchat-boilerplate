@@ -9,7 +9,7 @@ An example Hubot demonstrating usage of the Rocket.Chat adaptor.
 
 [hubot]: https://github.com/hubotio/hubot
 [hubot-rocketchat]: https://github.com/rocketchat/hubot-rocketchat
-[driver]: https://github.com/rocketchat/rocketchat-bot-driver
+[sdk]: https://github.com/rocketchat/Rocket.Chat.js.SDK
 [contributing]: https://rocket.chat/docs/contributing/developing/
 [issues]: https://github.com/RocketChat/hubot-rocketchat-boilerplate/issues
 [generator]: https://github.com/hubotio/generator-hubot
@@ -20,7 +20,7 @@ An example Hubot demonstrating usage of the Rocket.Chat adaptor.
 ## Stable Versions
 
 This demo uses [`hubot`][hubot] v3 and [`hubot-rocketchat`][hubot-rocketchat]
-v2, using the new [Rocketchat Bot Driver][[driver] for Rocket.Chat instances
+v2, using the new [Rocketchat Node.js SDK][[sdk] for Rocket.Chat instances
 0.60.0 onward.
 
 Versions of `hubot-rocketchat` prior to v2 are incompatible with Hubot v3
