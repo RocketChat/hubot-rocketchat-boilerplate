@@ -15,7 +15,7 @@
 //
 // Author:
 //   Rocket.Chat
-module.exports = function(robot) {
+module.exports = (robot) => {
   robot.respond(/\brc(-|\s)version\b/i, function(res) {
     package = require('../package.json')
     res.send(`You're using adapter version ${package.json}`)

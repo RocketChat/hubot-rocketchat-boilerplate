@@ -21,7 +21,7 @@
         "-a",
         "rocketchat"
       ],
-      "envFile": "${workspaceFolder}/.local.env",
+      "envFile": "${workspaceFolder}/.env",
       "stopOnEntry": false,
       "console": "integratedTerminal"
     }
