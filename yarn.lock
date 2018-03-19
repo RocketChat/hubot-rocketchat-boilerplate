@@ -2,28 +2,13 @@
 # yarn lockfile v1
 
 
-"@types/events@*":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@types/events/-/events-1.2.0.tgz#81a6731ce4df43619e5c8c945383b3e62a89ea86"
-
-"@types/lodash@^4.14.102":
-  version "4.14.105"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.105.tgz#9fcc4627a1f98f8f8fce79ddb2bff4afd97e959b"
-
 "@types/lru-cache@^4.1.0":
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/@types/lru-cache/-/lru-cache-4.1.0.tgz#ef69ce9c3ebb46bd146f0d80f0c1ce38b0508eae"
 
-"@types/node@*", "@types/node@^9.4.6":
+"@types/node@^9.4.6":
   version "9.4.7"
   resolved "http://registry.npmjs.org/@types/node/-/node-9.4.7.tgz#57d81cd98719df2c9de118f2d5f3b1120dcd7275"
-
-"@types/ws@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@types/ws/-/ws-4.0.1.tgz#3309d4d02a1ea9cf617d638b9239a2e1e28ef21e"
-  dependencies:
-    "@types/events" "*"
-    "@types/node" "*"
 
 accepts@~1.2.12, accepts@~1.2.13:
   version "1.2.13"
@@ -47,7 +32,7 @@ ansi-styles@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-2.2.1.tgz#b432dd3358b634cf75e1e4664368240533c1ddbe"
 
-asteroid@rocketchat/asteroid:
+"asteroid@github:rocketchat/asteroid":
   version "0.6.1"
   resolved "https://codeload.github.com/rocketchat/asteroid/tar.gz/a76a53254e381f9487aa2a9be3d874c9a2df6552"
   dependencies:
@@ -390,12 +375,26 @@ http-parser-js@>=0.4.0:
   version "0.4.11"
   resolved "https://registry.yarnpkg.com/http-parser-js/-/http-parser-js-0.4.11.tgz#5b720849c650903c27e521633d94696ee95f3529"
 
-hubot-rocketchat@timkinnane/hubot-rocketchat#convert-es6:
+hubot-rocketchat@rocketchat/hubot-rocketchat#convert-es6:
   version "2.0.0-development"
-  resolved "https://codeload.github.com/timkinnane/hubot-rocketchat/tar.gz/73571c11a279f44aeafd542d46f52ba12c851c43"
+  resolved "https://codeload.github.com/rocketchat/hubot-rocketchat/tar.gz/69172dfdf321b9dabf02eb83f0bb8e344ea73ddc"
   dependencies:
     hubot "https://github.com/hubotio/hubot.git#v3.0.1"
-    rocketchat-bot-driver "^0.0.3"
+    rocketchat-sdk "0.0.0-develop"
+
+hubot@3:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/hubot/-/hubot-3.0.1.tgz#fe1bca4ece9c4f88f172047d63945b78d3623759"
+  dependencies:
+    async ">=0.1.0 <1.0.0"
+    chalk "^1.0.0"
+    cline "^0.8.2"
+    coffee-script "1.6.3"
+    connect-multiparty "^1.2.5"
+    express "^3.21.2"
+    log "1.4.0"
+    optparse "1.0.4"
+    scoped-http-client "0.11.0"
 
 "hubot@https://github.com/hubotio/hubot.git#v3.0.1":
   version "0.0.0-development"
@@ -621,16 +620,13 @@ rndm@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/rndm/-/rndm-1.2.0.tgz#f33fe9cfb52bbfd520aa18323bc65db110a1b76c"
 
-rocketchat-bot-driver@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/rocketchat-bot-driver/-/rocketchat-bot-driver-0.0.3.tgz#870720e51e69d4c152bd59ed9f5f93588cc3637a"
+rocketchat-sdk@0.0.0-develop:
+  version "0.0.0-develop"
+  resolved "https://registry.yarnpkg.com/rocketchat-sdk/-/rocketchat-sdk-0.0.0-develop.tgz#43e2afc49fa3c609f2236b8e35b90716c606b795"
   dependencies:
-    "@types/lodash" "^4.14.102"
     "@types/lru-cache" "^4.1.0"
     "@types/node" "^9.4.6"
-    "@types/ws" "^4.0.1"
     asteroid rocketchat/asteroid
-    dotenv "^5.0.1"
     lru-cache "^4.1.1"
 
 scoped-http-client@0.11.0:

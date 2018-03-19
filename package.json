@@ -19,8 +19,8 @@
   },
   "dependencies": {
     "coffeescript": "^2.2.2",
-    "hubot": "https://github.com/hubotio/hubot.git#v3.0.1",
-    "hubot-rocketchat": "timkinnane/hubot-rocketchat#convert-es6"
+    "hubot": "3",
+    "hubot-rocketchat": "rocketchat/hubot-rocketchat#convert-es6"
   },
   "scripts": {
     "debug": "node --inspect --inspect-brk -r dotenv/config node_modules/hubot/bin/hubot.js -a rocketchat",
