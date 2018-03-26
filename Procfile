@@ -1,1 +1,1 @@
-web: bin/hubot -a rocketchat
+web: bin/hubot

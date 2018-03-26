@@ -78,8 +78,12 @@ You can run with the shell adapter just to test
 When you're ready to connect the bot to an instance of Rocket.Chat
 
 1. Create a user for the bot, with the role _bot_
-2. Edit the `./.env` file with the user and connection settings
+2. Create an `./.env` file with the user and connection settings
 3. Run `yarn local` script to connect to your local Rocket.Chat
+
+The `local` npm script will read in the env file, so you can populate and modify
+those settings easily (see [configuration](#configuration)). In production, they
+should be pre-populated in the server environment.
 
 ### Running in Production
 
@@ -92,6 +96,11 @@ them after the launch command as switches, like `-a rocketchat`.
 - `bin/hubot` unix binary
 - `bin/hubot.cmd` in windows
 - `Procfile` for Heroku
+
+Env variables should be populated on the server before launching
+(see [configuration](#configuration)). The launcher will also install npm
+dependencies on every run, in case it's booting in a fresh container (this isn't
+required when working locally).
 
 More information on [deployment configs][deployment] here.
 
