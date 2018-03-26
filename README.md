@@ -4,7 +4,7 @@ An example Hubot demonstrating usage of the Rocket.Chat adaptor.
 ### NB: THIS IS A WORK IN PROGRESS
 
 > Please do not attempt to implement until this message is removed
-
+>
 > The `-develop` tag will also be removed from the package file.
 
 [hubot]: https://github.com/hubotio/hubot
@@ -19,13 +19,13 @@ An example Hubot demonstrating usage of the Rocket.Chat adaptor.
 
 ## Stable Versions
 
-This demo uses [`hubot`][hubot] v3 and [`hubot-rocketchat`][hubot-rocketchat]
+This demo uses [Hubot][hubot] v3 and [Rocketchat.Chat adapter][hubot-rocketchat]
 v2, using the new [Rocketchat Node.js SDK][[sdk] for Rocket.Chat instances
 0.60.0 onward.
 
 Versions of `hubot-rocketchat` prior to v2 are incompatible with Hubot v3
 
-Due to the v1 adapter's use of coffee script, extending classes in es6
+Due to the v1 adapter's use of Coffeescript, extending classes in es6
 javascript is troublesome.
 
 This bot is written in es6 and intended to run on node v8+. To run a bot on
@@ -105,15 +105,6 @@ of each in this repo, but neither is required.
 
 When running locally, we've used [`dotenv`][dotenv] to load configs from the
 `./.env` file. That makes it easy for setting environment variables.
-
-### NB: GIT IGNORE THE ENV 🚨
-
-It was included only as a sample for how to set up the bot.
-
-If you commit actual passwords to your repo, they can be retrieved even if
-the file is later deleted.
-
-Before committing, delete the last line of `./.gitignore` and un-track the file.
 
 ### Environment Variables
 
