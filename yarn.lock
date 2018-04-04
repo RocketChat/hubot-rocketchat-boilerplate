@@ -32,7 +32,7 @@ ansi-styles@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-2.2.1.tgz#b432dd3358b634cf75e1e4664368240533c1ddbe"
 
-"asteroid@github:rocketchat/asteroid":
+asteroid@rocketchat/asteroid:
   version "0.6.1"
   resolved "https://codeload.github.com/rocketchat/asteroid/tar.gz/a76a53254e381f9487aa2a9be3d874c9a2df6552"
   dependencies:

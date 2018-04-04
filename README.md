@@ -110,6 +110,15 @@ Scripts can be added to the `./scripts` folder, or by installing node packages
 and listing their names in the `external-scripts.json` array. There's an example
 of each in this repo, but neither is required.
 
+### Example Scripts
+
+Two scripts are packaged with the boilerplate, as a demo for manual tests.
+Each of the following will respond in a public channel if the bot username is
+prefixed, or without the bot's name if in a DM.
+
+- `what time is it` or `what's the time` - Tells you the time
+- `rc version` - Gives you version info for Rocket.Chat and Hubot (two messages)
+
 ## Configuration
 
 When running locally, we've used [`dotenv`][dotenv] to load configs from the
@@ -128,9 +137,10 @@ When running locally, we've used [`dotenv`][dotenv] to load configs from the
 | `ROCKETCHAT_USER`      | Name in the platform (bot user must be created first) |
 | `ROCKETCHAT_PASSWORD`  | Matching the credentials setup in Rocket.Chat         |
 | `ROCKETCHAT_ROOM`      | The default room/s for the bot to listen in to        |
-| `LISTEN_ON_ALL_PUBLIC` | Wether the bot should be listening everywhere         |
-| `RESPOND_TO_DM`        | If the bot can respond privately or only in the open  |
-| `RESPOND_TO_EDITED`    | If the bot should reply / re-reply to edited messages |
+| `LISTEN_ON_ALL_PUBLIC` | SDK config - Listen in all public or just joined      |
+| `RESPOND_TO_LIVECHAT`  | SDK config - listen in livechat rooms                 |
+| `RESPOND_TO_DM`        | SDK config - listen in DMs with the bot               |
+| `RESPOND_TO_EDITED`    | SDK config - listen to edited messages                |
 
 ## Contributions Welcome
 

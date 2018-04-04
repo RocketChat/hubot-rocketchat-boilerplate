@@ -17,15 +17,15 @@
     "node": "> 8.0.0",
     "npm": "> 5.0.0"
   },
-  "dependencies": {
-    "coffeescript": "^2.2.2",
-    "hubot": "3",
-    "hubot-rocketchat": "rocketchat/hubot-rocketchat#convert-es6"
-  },
   "scripts": {
     "debug": "node --inspect --inspect-brk -r dotenv/config node_modules/hubot/bin/hubot.js -a rocketchat",
     "shell": "node -r dotenv/config node_modules/hubot/bin/hubot.js -a shell",
     "local": "node -r dotenv/config node_modules/hubot/bin/hubot.js -a rocketchat"
+  },
+  "dependencies": {
+    "coffeescript": "^2.2.2",
+    "hubot": "3",
+    "hubot-rocketchat": "rocketchat/hubot-rocketchat#convert-es6"
   },
   "devDependencies": {
     "dotenv": "^5.0.1"
