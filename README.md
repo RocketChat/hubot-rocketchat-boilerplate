@@ -1,8 +1,6 @@
 # hubot-rocketchat-boilerplate
 Create and run a Rocket.Chat bot in under two minutes. 
 
-This is an example Hubot demonstrating usage of the Rocket.Chat adaptor.
-
 ### NB: THIS IS A WORK IN PROGRESS
 
 > Please do not attempt to implement until this message is removed
@@ -60,7 +58,6 @@ mybotuser rc version
 
 You can examine the source code of these two bots under the `/scripts` directory, where you can add your own bot scripts written in Javascript.
 
-
 ## Stable Versions
 
 This demo uses [Hubot][hubot] v3 and [Rocketchat.Chat adapter][hubot-rocketchat]
@@ -80,36 +77,9 @@ Older versions of the adaptor (v0.*) are also incompatible with more recent
 versions of Rocket.Chat (v0.35+). Please report an issue if you find specific 
 version mismatches and we'll update this document.
 
-## Getting Started
+## More Details
 
 This is a boilerplate for making your own bots with Hubot and Rocket.Chat.
-
-There is also a [Hubot generator for Yeoman][generator], which may be more up
-to date, but we do not control the versions of the Rocket.Chat adaptor it uses.
-
-### Git setup
-
-1. Create a bare clone of the repository at a new path.
-
-    `git clone --bare https://github.com/rocketchat/hubot-rocketchat-boilerplate.git ./EXAMPLE_REPO`
-
-2. Move into the repo.
-
-    `cd ./EXAMPLE_REPO`
-
-3. Create a [new remote repo][newrepo] and set it as the origin.
-
-    `git remote set-url --push origin git@github.com:EXAMPLE_USERNAME/EXAMPLE_REPO.git`
-
-4. Change details like `name` and `author` in **./paakcage.json**
-
-5. Commit your changes
-
-    `git add -A && git commit -m "New bot set up"`
-
-4. Push the main branch to the new repo
-
-    `git push -u origin master`
 
 ### Running Locally
 
@@ -180,7 +150,8 @@ When running locally, we've used [`dotenv`][dotenv] to load configs from the
 | `ROCKETCHAT_URL`       | Local Rocketchat address (start before the bot)       |
 | `ROCKETCHAT_USER`      | Name in the platform (bot user must be created first) |
 | `ROCKETCHAT_PASSWORD`  | Matching the credentials setup in Rocket.Chat         |
-| `ROCKETCHAT_ROOM`      | The default room/s for the bot to listen in to        |
+| `ROCKETCHAT_ROOM`      | Room/s for the bot to listen in- comma separated list |
+| `ROCKETCHAT_USESSL`    | Either 'true' if server support https:                |
 | `LISTEN_ON_ALL_PUBLIC` | SDK config - Listen in all public or just joined      |
 | `RESPOND_TO_LIVECHAT`  | SDK config - listen in livechat rooms                 |
 | `RESPOND_TO_DM`        | SDK config - listen in DMs with the bot               |
