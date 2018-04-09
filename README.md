@@ -1,5 +1,7 @@
 # hubot-rocketchat-boilerplate
-An example Hubot demonstrating usage of the Rocket.Chat adaptor.
+Create and run a Rocket.Chat bot in under two minutes. 
+
+This is an example Hubot demonstrating usage of the Rocket.Chat adaptor.
 
 ### NB: THIS IS A WORK IN PROGRESS
 
@@ -16,6 +18,48 @@ An example Hubot demonstrating usage of the Rocket.Chat adaptor.
 [deployment]: https://hubot.github.com/docs/deploying/
 [dotenv]: https://www.npmjs.com/package/dotenv
 [newrepo]: https://help.github.com/articles/creating-a-new-repository/
+
+## Quick Start
+
+```
+git clone https://github.com/RocketChat/hubot-rocketchat-boilerplate
+cd hubot-rocketchat-boilerplate
+npm install
+```
+Create a _.env_ file with content:
+
+```
+export ROCKETCHAT_URL=myserver.com
+export ROCKETCHAT_USER=mybotuser
+export ROCKETCHAT_PASSWORD=mypassword
+export ROCKETCHAT_ROOM=general
+export ROCKETCHAT_USESSL=true
+```
+
+Adjust the content to fit your server and user credentials. Make sure `myuser` has **BOT role** on the server, if you don't know what that means, ask your server administrator to set it up for you.
+
+Then run the bot:
+
+```
+source .env
+bin/hubot
+```
+
+On the server, login as a regular user (not the BOT user), go to GENERAL, and try:
+
+```
+mybotuser what is the time
+```
+
+OR
+
+```
+mybotuser rc version
+```
+`< TBD:  insert sample run screenshot >`
+
+You can examine the source code of these two bots under the `/scripts` directory, where you can add your own bot scripts written in Javascript.
+
 
 ## Stable Versions
 
