@@ -2,6 +2,15 @@
 # yarn lockfile v1
 
 
+"@rocket.chat/sdk@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@rocket.chat/sdk/-/sdk-0.1.0.tgz#b85717abd81fd5b485726eb6b609e8f1b50ab818"
+  dependencies:
+    "@types/lru-cache" "^4.1.0"
+    "@types/node" "^9.4.6"
+    asteroid rocketchat/asteroid
+    lru-cache "^4.1.1"
+
 "@types/lru-cache@^4.1.0":
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/@types/lru-cache/-/lru-cache-4.1.0.tgz#ef69ce9c3ebb46bd146f0d80f0c1ce38b0508eae"
@@ -375,30 +384,16 @@ http-parser-js@>=0.4.0:
   version "0.4.11"
   resolved "https://registry.yarnpkg.com/http-parser-js/-/http-parser-js-0.4.11.tgz#5b720849c650903c27e521633d94696ee95f3529"
 
-hubot-rocketchat@rocketchat/hubot-rocketchat#convert-es6:
+hubot-rocketchat@rocketchat/hubot-rocketchat#develop:
   version "2.0.0-development"
-  resolved "https://codeload.github.com/rocketchat/hubot-rocketchat/tar.gz/69172dfdf321b9dabf02eb83f0bb8e344ea73ddc"
+  resolved "https://codeload.github.com/rocketchat/hubot-rocketchat/tar.gz/81e56ac18fff0ed54d6154a470f6a1d01988d7f4"
   dependencies:
-    hubot "https://github.com/hubotio/hubot.git#v3.0.1"
-    rocketchat-sdk "0.0.0-develop"
+    "@rocket.chat/sdk" "^0.1.0"
+    hubot "3"
 
 hubot@3:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/hubot/-/hubot-3.0.1.tgz#fe1bca4ece9c4f88f172047d63945b78d3623759"
-  dependencies:
-    async ">=0.1.0 <1.0.0"
-    chalk "^1.0.0"
-    cline "^0.8.2"
-    coffee-script "1.6.3"
-    connect-multiparty "^1.2.5"
-    express "^3.21.2"
-    log "1.4.0"
-    optparse "1.0.4"
-    scoped-http-client "0.11.0"
-
-"hubot@https://github.com/hubotio/hubot.git#v3.0.1":
-  version "0.0.0-development"
-  resolved "https://github.com/hubotio/hubot.git#e89b0402d756ea0ee6f7960a2fd6bab364330f85"
   dependencies:
     async ">=0.1.0 <1.0.0"
     chalk "^1.0.0"
@@ -619,15 +614,6 @@ response-time@~2.3.1:
 rndm@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/rndm/-/rndm-1.2.0.tgz#f33fe9cfb52bbfd520aa18323bc65db110a1b76c"
-
-rocketchat-sdk@0.0.0-develop:
-  version "0.0.0-develop"
-  resolved "https://registry.yarnpkg.com/rocketchat-sdk/-/rocketchat-sdk-0.0.0-develop.tgz#43e2afc49fa3c609f2236b8e35b90716c606b795"
-  dependencies:
-    "@types/lru-cache" "^4.1.0"
-    "@types/node" "^9.4.6"
-    asteroid rocketchat/asteroid
-    lru-cache "^4.1.1"
 
 scoped-http-client@0.11.0:
   version "0.11.0"
