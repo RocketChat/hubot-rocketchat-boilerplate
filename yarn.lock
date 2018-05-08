@@ -2,14 +2,15 @@
 # yarn lockfile v1
 
 
-"@rocket.chat/sdk@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@rocket.chat/sdk/-/sdk-0.1.0.tgz#b85717abd81fd5b485726eb6b609e8f1b50ab818"
+"@rocket.chat/sdk@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@rocket.chat/sdk/-/sdk-0.2.1.tgz#e975ad29c48056a67993433bf394cd9bf6b126c0"
   dependencies:
     "@types/lru-cache" "^4.1.0"
     "@types/node" "^9.4.6"
     asteroid rocketchat/asteroid
     lru-cache "^4.1.1"
+    node-rest-client "^3.1.0"
 
 "@types/lru-cache@^4.1.0":
   version "4.1.0"
@@ -247,6 +248,12 @@ debug@2.6.9:
   dependencies:
     ms "2.0.0"
 
+debug@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
+  dependencies:
+    ms "2.0.0"
+
 debug@~2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.2.0.tgz#f87057e995b1a1f6ae6a4960664137bc56f039da"
@@ -359,6 +366,12 @@ finalhandler@0.4.0:
     on-finished "~2.3.0"
     unpipe "~1.0.0"
 
+follow-redirects@>=1.2.0:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.4.1.tgz#d8120f4518190f55aac65bb6fc7b85fcd666d6aa"
+  dependencies:
+    debug "^3.1.0"
+
 forwarded@~0.1.0:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/forwarded/-/forwarded-0.1.2.tgz#98c23dab1175657b8c0573e8ceccd91b0ff18c84"
@@ -384,11 +397,11 @@ http-parser-js@>=0.4.0:
   version "0.4.11"
   resolved "https://registry.yarnpkg.com/http-parser-js/-/http-parser-js-0.4.11.tgz#5b720849c650903c27e521633d94696ee95f3529"
 
-hubot-rocketchat@rocketchat/hubot-rocketchat#develop:
+hubot-rocketchat@rocketchat/hubot-rocketchat:
   version "2.0.0-development"
-  resolved "https://codeload.github.com/rocketchat/hubot-rocketchat/tar.gz/81e56ac18fff0ed54d6154a470f6a1d01988d7f4"
+  resolved "https://codeload.github.com/rocketchat/hubot-rocketchat/tar.gz/150b3e2fca5ba7b5dd6730fc4849c7e21841213b"
   dependencies:
-    "@rocket.chat/sdk" "^0.1.0"
+    "@rocket.chat/sdk" "^0.2.1"
     hubot "3"
 
 hubot@3:
@@ -528,6 +541,14 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
+node-rest-client@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/node-rest-client/-/node-rest-client-3.1.0.tgz#e0beb6dda7b20cc0b67a7847cf12c5fc419c37c3"
+  dependencies:
+    debug "~2.2.0"
+    follow-redirects ">=1.2.0"
+    xml2js ">=0.2.4"
+
 on-finished@~2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/on-finished/-/on-finished-2.1.1.tgz#f82ca1c9e3a4f3286b1b9938610e5b8636bd3cb2"
@@ -614,6 +635,10 @@ response-time@~2.3.1:
 rndm@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/rndm/-/rndm-1.2.0.tgz#f33fe9cfb52bbfd520aa18323bc65db110a1b76c"
+
+sax@>=0.6.0:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
 
 scoped-http-client@0.11.0:
   version "0.11.0"
@@ -770,6 +795,17 @@ websocket-driver@>=0.5.1:
 websocket-extensions@>=0.1.1:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.3.tgz#5d2ff22977003ec687a4b87073dfbbac146ccf29"
+
+xml2js@>=0.2.4:
+  version "0.4.19"
+  resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.4.19.tgz#686c20f213209e94abf0d1bcf1efaa291c7827a7"
+  dependencies:
+    sax ">=0.6.0"
+    xmlbuilder "~9.0.1"
+
+xmlbuilder@~9.0.1:
+  version "9.0.7"
+  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-9.0.7.tgz#132ee63d2ec5565c557e20f4c22df9aca686b10d"
 
 yallist@^2.1.2:
   version "2.1.2"
