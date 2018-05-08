@@ -54,7 +54,7 @@ OR
 ```
 mybotuser rc version
 ```
-`< TBD:  insert sample run screenshot >`
+![boilerplate example](https://raw.githubusercontent.com/wiki/arthurTemporim/hubot-rocketchat-boilerplate/images/boilerplate.gif)
 
 You can examine the source code of these two bots under the `/scripts` directory, where you can add your own bot scripts written in Javascript.
 
