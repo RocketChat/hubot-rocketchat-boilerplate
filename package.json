@@ -23,7 +23,6 @@
     "local": "node -r dotenv/config node_modules/hubot/bin/hubot.js -a rocketchat"
   },
   "dependencies": {
-    "coffeescript": "^2.2.2",
     "hubot": "3",
     "hubot-rocketchat": "^2.0.0"
   },
