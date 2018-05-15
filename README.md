@@ -46,7 +46,7 @@ bin/hubot
 On the server, login as a regular user (not the BOT user), go to GENERAL, and try:
 
 ```
-mybotuser what is the time
+mybotuser what time is it
 ```
 
 OR
