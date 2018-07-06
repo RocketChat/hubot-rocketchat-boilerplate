@@ -16,6 +16,7 @@ Create and run a Rocket.Chat bot in under two minutes.
 [deployment]: https://hubot.github.com/docs/deploying/
 [dotenv]: https://www.npmjs.com/package/dotenv
 [newrepo]: https://help.github.com/articles/creating-a-new-repository/
+[env]: https://github.com/RocketChat/hubot-rocketchat#configuring-your-bot
 
 ## Quick Start
 
@@ -138,24 +139,7 @@ prefixed, or without the bot's name if in a DM.
 When running locally, we've used [`dotenv`][dotenv] to load configs from the
 `./.env` file. That makes it easy for setting environment variables.
 
-### Environment Variables
-
-| Env var                | Description                                           |
-| ---------------------- | ----------------------------------------------------- |
-| `HUBOT_NAME`           | The programmatic name for listeners                   |
-| `HUBOT_ALIAS`          | An alternate name for the bot to respond to           |
-| `HUBOT_LOG_LEVEL`      | The minimum level of logs to output                   |
-| `HUBOT_HTTPD`          | If the bot needs to listen to or make HTTP requests   |
-| `HUBOT_ADAPTER`        | The platform adapter package to require on loading    |
-| `ROCKETCHAT_URL`       | Local Rocketchat address (start before the bot)       |
-| `ROCKETCHAT_USER`      | Name in the platform (bot user must be created first) |
-| `ROCKETCHAT_PASSWORD`  | Matching the credentials setup in Rocket.Chat         |
-| `ROCKETCHAT_ROOM`      | Room/s for the bot to listen in- comma separated list |
-| `ROCKETCHAT_USESSL`    | Either 'true' if server support https:                |
-| `LISTEN_ON_ALL_PUBLIC` | SDK config - Listen in all public or just joined      |
-| `RESPOND_TO_LIVECHAT`  | SDK config - listen in livechat rooms                 |
-| `RESPOND_TO_DM`        | SDK config - listen in DMs with the bot               |
-| `RESPOND_TO_EDITED`    | SDK config - listen to edited messages                |
+Please see [adapter docs for source of truth on environment variables][env].
 
 ## Contributions Welcome
 
