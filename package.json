@@ -15,7 +15,7 @@
   ],
    "engines": {
     "node": ">=8.x",
-    "npm": ">=4.x"
+    "npm": ">=5.x"
   },
   "scripts": {
     "debug": "node --inspect --inspect-brk -r dotenv/config node_modules/hubot/bin/hubot.js -a rocketchat",
