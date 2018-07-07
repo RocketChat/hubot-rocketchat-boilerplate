@@ -13,9 +13,9 @@
     "chatbot",
     "chat"
   ],
-  "engines": {
-    "node": "> 8.0.0",
-    "npm": "> 5.0.0"
+   "engines": {
+    "node": ">=8.x",
+    "npm": ">=4.x"
   },
   "scripts": {
     "debug": "node --inspect --inspect-brk -r dotenv/config node_modules/hubot/bin/hubot.js -a rocketchat",
@@ -25,7 +25,7 @@
   "dependencies": {
     "coffeescript": "^2.2.2",
     "hubot": "3",
-    "hubot-rocketchat": "^2.0.0"
+    "hubot-rocketchat": "rocketchat/hubot-rocketchat"
   },
   "devDependencies": {
     "dotenv": "^5.0.1"
