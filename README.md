@@ -28,7 +28,7 @@ npm install
 Create a _.env_ file with content:
 
 ```
-export ROCKETCHAT_URL=myserver.com
+export ROCKETCHAT_URL=https://myserver.com
 export ROCKETCHAT_USER=mybotuser
 export ROCKETCHAT_PASSWORD=mypassword
 export ROCKETCHAT_ROOM=general
